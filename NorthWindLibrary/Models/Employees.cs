@@ -1,0 +1,56 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace NorthWindLibrary.Models
+{
+    public partial class Employees
+    {
+        public Employees()
+        {
+            Orders = new HashSet<Orders>();
+        }
+
+        [Key]
+        [Column("EmployeeID")]
+        public int EmployeeId { get; set; }
+        [Required]
+        [StringLength(20)]
+        public string LastName { get; set; }
+        [Required]
+        [StringLength(10)]
+        public string FirstName { get; set; }
+        public int? ContactTypeIdentifier { get; set; }
+        [StringLength(25)]
+        public string TitleOfCourtesy { get; set; }
+        [Column(TypeName = "datetime")]
+        public DateTime? BirthDate { get; set; }
+        [Column(TypeName = "datetime")]
+        public DateTime? HireDate { get; set; }
+        [StringLength(60)]
+        public string Address { get; set; }
+        [StringLength(15)]
+        public string City { get; set; }
+        [StringLength(15)]
+        public string Region { get; set; }
+        [StringLength(10)]
+        public string PostalCode { get; set; }
+        public int? CountryIdentifier { get; set; }
+        [StringLength(24)]
+        public string HomePhone { get; set; }
+        [StringLength(4)]
+        public string Extension { get; set; }
+        public string Notes { get; set; }
+        public int? ReportsTo { get; set; }
+
+        [ForeignKey(nameof(ContactTypeIdentifier))]
+        [InverseProperty(nameof(ContactType.Employees))]
+        public virtual ContactType ContactTypeIdentifierNavigation { get; set; }
+        [ForeignKey(nameof(CountryIdentifier))]
+        [InverseProperty(nameof(Countries.Employees))]
+        public virtual Countries CountryIdentifierNavigation { get; set; }
+        [InverseProperty("Employee")]
+        public virtual ICollection<Orders> Orders { get; set; }
+    }
+}

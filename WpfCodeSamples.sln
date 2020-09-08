@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1231
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7D709160-1636-4B32-9BA3-78081404A3A6}"
+	ProjectSection(SolutionItems) = preProject
+		GetKeys.sql = GetKeys.sql
+		North2020Script.sql = North2020Script.sql
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Front end projects", "Front end projects", "{13CE85A1-57F9-4BCF-B1B3-C0DB085D5235}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1", "Example1\Example1.csproj", "{A0FA3E75-0680-4DB2-B3B0-61617593513F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Class projects", "Class projects", "{06B4FA4A-FB22-448F-BAEF-B06E3B83DA28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{6D49F625-E9F5-4751-833B-B0C0A01C4D7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWindLibrary", "NorthWindLibrary\NorthWindLibrary.csproj", "{56D291C1-9ABA-434A-B6DB-9F54FD9BED72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0FA3E75-0680-4DB2-B3B0-61617593513F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0FA3E75-0680-4DB2-B3B0-61617593513F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0FA3E75-0680-4DB2-B3B0-61617593513F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0FA3E75-0680-4DB2-B3B0-61617593513F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D49F625-E9F5-4751-833B-B0C0A01C4D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D49F625-E9F5-4751-833B-B0C0A01C4D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D49F625-E9F5-4751-833B-B0C0A01C4D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D49F625-E9F5-4751-833B-B0C0A01C4D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D291C1-9ABA-434A-B6DB-9F54FD9BED72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D291C1-9ABA-434A-B6DB-9F54FD9BED72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D291C1-9ABA-434A-B6DB-9F54FD9BED72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D291C1-9ABA-434A-B6DB-9F54FD9BED72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A0FA3E75-0680-4DB2-B3B0-61617593513F} = {13CE85A1-57F9-4BCF-B1B3-C0DB085D5235}
+		{6D49F625-E9F5-4751-833B-B0C0A01C4D7A} = {06B4FA4A-FB22-448F-BAEF-B06E3B83DA28}
+		{56D291C1-9ABA-434A-B6DB-9F54FD9BED72} = {06B4FA4A-FB22-448F-BAEF-B06E3B83DA28}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D17527A-92DA-4FEE-80D0-3BD67C349959}
+	EndGlobalSection
+EndGlobal
