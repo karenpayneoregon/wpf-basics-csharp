@@ -173,6 +173,7 @@
     <Compile Include="Context\Configurations\ProductsConfiguration.cs" />
     <Compile Include="Context\Configurations\ShippersConfiguration.cs" />
     <Compile Include="Context\Configurations\SuppliersConfiguration.cs" />
+    <Compile Include="Extensions\DbContextExtensions.cs" />
     <Compile Include="Models\BusinessEntityPhone.cs" />
     <Compile Include="Models\Categories.cs" />
     <Compile Include="Models\ContactDevices.cs" />
