@@ -4,11 +4,23 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Example1"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="Basic WPF"
-    Width="800"
-    Height="450"
+    Title="Basic WPF 1 - No control names or click event - RoutedCommand"
+    Width="446.429"
+    Height="207.589"
     ResizeMode="NoResize"
     WindowStartupLocation="CenterScreen"
-    mc:Ignorable="d">
-    <Grid />
+    mc:Ignorable="d" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="143*"/>
+            <ColumnDefinition Width="651*"/>
+        </Grid.ColumnDefinitions>
+        <Button
+            Width="75"
+            Margin="0,0,10,10"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Command="{x:Static local:MainWindow.ExitRoutedCommand}"
+            Content="Exit" Grid.Column="1" />
+    </Grid>
 </Window>

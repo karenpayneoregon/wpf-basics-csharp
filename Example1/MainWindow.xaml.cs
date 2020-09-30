@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using static Example1.Classes.CommonDialogs;
 namespace Example1
 {
     /// <summary>
@@ -20,9 +20,25 @@ namespace Example1
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static RoutedCommand ExitRoutedCommand = new RoutedCommand();
         public MainWindow()
         {
             InitializeComponent();
+
+            CommandBindings.Add(new CommandBinding(
+                ExitRoutedCommand,
+                ExitApplicationCommandOnExecute,
+                ApplicationExitCanExecute));
+
         }
+        private void ExitApplicationCommandOnExecute(object sender, ExecutedRoutedEventArgs e)
+        {
+            if (Question("Cancel login?"))
+            {
+                Application.Current.Shutdown();
+            }
+        }
+
+        private void ApplicationExitCanExecute(object sender, CanExecuteRoutedEventArgs e) => e.CanExecute = true;
     }
 }
