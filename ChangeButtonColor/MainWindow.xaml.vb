@@ -1,7 +1,7 @@
 ﻿Class MainWindow
     Public Shared ExitRoutedCommand As New RoutedCommand()
     Private Sub ExitApplicationCommandOnExecute(ByVal sender As Object, ByVal e As ExecutedRoutedEventArgs)
-        Application.Current.Shutdown()
+        Windows.Application.Current.Shutdown()
     End Sub
 
     Private Sub ApplicationExitCanExecute(ByVal sender As Object, ByVal e As CanExecuteRoutedEventArgs)
