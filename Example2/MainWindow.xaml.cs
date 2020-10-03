@@ -23,7 +23,7 @@ namespace Example2
         {
             InitializeComponent();
 
-            DataContext = new MainViewModel();
+            DataContext = new ViewModel();
         }
     }
 }

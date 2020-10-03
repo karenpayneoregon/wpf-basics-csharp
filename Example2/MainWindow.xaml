@@ -1,6 +1,7 @@
 ﻿<Window x:Class="Example2.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ViewModels="clr-namespace:Example2.ViewModels"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Example2"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -18,8 +19,11 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Command="{Binding PlayCommand}"
-            CommandParameter="{Binding ElementName=ButtonImage, Path=Source}">
-            <Image Name="ButtonImage">
+            CommandParameter="{Binding Source, ElementName=ButtonImage}">
+            <Button.DataContext>
+                <ViewModels:ViewModel />
+            </Button.DataContext>
+            <Image x:Name="ButtonImage">
                 <Image.Style>
                     <Style TargetType="{x:Type Image}">
                         <Style.Triggers>

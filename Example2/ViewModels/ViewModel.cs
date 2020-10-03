@@ -4,12 +4,12 @@ using System.Windows.Input;
 
 namespace Example2.ViewModels
 {
-    public class MainViewModel : INotifyPropertyChanged
+    public class ViewModel : INotifyPropertyChanged
     {
         private bool _isStopped = false;
         private RelayCommand _playCommand;
 
-        public MainViewModel()
+        public ViewModel()
         {
             isPlaying = true;
         }
