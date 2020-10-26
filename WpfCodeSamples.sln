@@ -26,6 +26,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ChangeButtonColor", "Change
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example2", "Example2\Example2.csproj", "{69E9067E-4E8A-4E45-BF7B-D4098079985F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example3", "Example3\Example3.csproj", "{FFA9C1EF-7525-43BC-A08D-1BF09A8F4DAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,10 @@ Global
 		{69E9067E-4E8A-4E45-BF7B-D4098079985F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69E9067E-4E8A-4E45-BF7B-D4098079985F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69E9067E-4E8A-4E45-BF7B-D4098079985F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFA9C1EF-7525-43BC-A08D-1BF09A8F4DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFA9C1EF-7525-43BC-A08D-1BF09A8F4DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFA9C1EF-7525-43BC-A08D-1BF09A8F4DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFA9C1EF-7525-43BC-A08D-1BF09A8F4DAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{63FB64BC-B9C8-45CE-A165-58130BE58C74} = {13CE85A1-57F9-4BCF-B1B3-C0DB085D5235}
 		{46A2D1D8-FD6F-4EB7-8A15-888B79C2C834} = {63FB64BC-B9C8-45CE-A165-58130BE58C74}
 		{69E9067E-4E8A-4E45-BF7B-D4098079985F} = {13CE85A1-57F9-4BCF-B1B3-C0DB085D5235}
+		{FFA9C1EF-7525-43BC-A08D-1BF09A8F4DAD} = {13CE85A1-57F9-4BCF-B1B3-C0DB085D5235}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6D17527A-92DA-4FEE-80D0-3BD67C349959}
